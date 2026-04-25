@@ -448,7 +448,6 @@ local FixLagTab = Window:Tab({
     Locked = false,
 })
 
--- Run thủ công
 FixLagTab:Button({
     Title = "Run FixLag",
     Desc = "Bấm để giảm lag",
@@ -457,4 +456,3 @@ FixLagTab:Button({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
     end
 })
-
