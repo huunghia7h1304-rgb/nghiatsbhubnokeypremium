@@ -438,3 +438,33 @@ SyntheticTab:Button({
 loadstring(game:HttpGet("https://gist.githubusercontent.com/ngm2807-sudo/b30689b1cf65651cd287213f40fa0f50/raw/TSBbyBaeMinh.lua"))()
     end
 })
+--==================================================
+-- FIX LAG TAB
+--==================================================
+
+local FixLagTab = Window:Tab({
+    Title = "Fix Lag",
+    Icon = "zap",
+    Locked = false,
+})
+
+-- Run thủ công
+FixLagTab:Button({
+    Title = "Run FixLag",
+    Desc = "Bấm để giảm lag",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/huunghia7h1304-rgb/fflag/refs/heads/main/fflagbynghiacuto"))()
+    end
+})
+
+-- Auto chạy luôn
+FixLagTab:Button({
+    Title = "Auto FixLag",
+    Desc = "Tự động giảm lag",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/huunghia7h1304-rgb/fflag/refs/heads/main/fflagbynghiacuto"))()
+        print("✅ FixLag đã bật!")
+    end
+})
