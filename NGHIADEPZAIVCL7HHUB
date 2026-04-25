@@ -454,17 +454,7 @@ FixLagTab:Button({
     Desc = "Bấm để giảm lag",
     Locked = false,
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/huunghia7h1304-rgb/fflag/refs/heads/main/fflagbynghiacuto"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
     end
 })
 
--- Auto chạy luôn
-FixLagTab:Button({
-    Title = "Auto FixLag",
-    Desc = "Tự động giảm lag",
-    Locked = false,
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/huunghia7h1304-rgb/fflag/refs/heads/main/fflagbynghiacuto"))()
-        print("✅ FixLag đã bật!")
-    end
-})
